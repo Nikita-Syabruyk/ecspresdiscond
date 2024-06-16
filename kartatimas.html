@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/fontello.css">
+    <link rel="stylesheet" href="CSS/main2.css">
+    <link rel="shortcut icon" href="img/00000.png"/>
+    <title>ЭкспрессДисконд</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary mb-5">
+        <div class="container-fluid menu2">
+          <a class="navbar-brand menu3" href="#">ЭкспрессДисконд</a>
+          <img src="img/00000.png " class="img-fluid imgmenu" alt="">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Переключатель навигации">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active koko" aria-current="page" href="timashevsk.html">Главная</a>
+              <a class="nav-link koko" href="Acc.html">Аккаун</a>
+              <a class="nav-link rozovi koko" href="kartatimas.html">Карта</a>
+              <a class="nav-link " data-bs-toggle="modal" data-bs-target="#exampleModal">Тимашевск</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      
+    <div id="map" class="map" style="width: 90%; height: 900px; border-radius: 30px;"></div>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU">
+    </script>
+    <script src="JS/timashevsk.js"></script>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title ccc" id="exampleModalLabel">Выберите город</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <a href="krasnodar.html" class="ccc">Краснодар</a>
+            <a href="rostov.html" class="ccc">Ростов-на-Дону</a>
+            <a href="timashevsk.html" class="ccc">Тимашевск</a>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
